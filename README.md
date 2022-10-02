@@ -1,3 +1,80 @@
-# infa_2022_ugriumov
-Угрюмов К.А. Б06-205
-olen
+# infa_2022_ugriumov - рисунок номер 14
+import pygame
+from pygame.draw import *
+
+pygame.init()
+
+FPS = 30
+screen = pygame.display.set_mode((397, 561))
+rect(screen, (34, 149, 34), (0, 321, 397, 240))
+rect(screen, (164, 158, 0), (0, 101, 397, 220))
+rect(screen, (100, 219, 249), (0, 0, 397, 101))
+rect(screen, (0, 0, 0), (0, 320, 397, 2))
+rect(screen, (0, 0, 0), (28, 101, 2, 219))
+rect(screen, (0, 0, 0), (56, 101, 2, 219))
+rect(screen, (0, 0, 0), (84, 101, 2, 219))
+rect(screen, (0, 0, 0), (112, 101, 2, 219))
+rect(screen, (0, 0, 0), (140, 101, 2, 219))
+rect(screen, (0, 0, 0), (168, 101, 2, 219))
+rect(screen, (0, 0, 0), (196, 101, 2, 219))
+rect(screen, (0, 0, 0), (224, 101, 2, 219))
+rect(screen, (0, 0, 0), (252, 101, 2, 219))
+rect(screen, (0, 0, 0), (280, 101, 2, 219))
+rect(screen, (0, 0, 0), (308, 101, 2, 219))
+rect(screen, (0, 0, 0), (336, 101, 2, 219))
+rect(screen, (0, 0, 0), (364, 101, 2, 219))
+polygon(screen, (164, 158, 0), [(249, 346), (249, 412), (316, 446), (316, 360)])
+polygon(screen, (0, 0, 0), [(249, 346), (249, 412), (316, 446), (316, 360)], 2)
+polygon(screen, (164, 158, 0), [(316, 446), (316, 360), (340, 340), (340, 420)])
+polygon(screen, (0, 0, 0), [(316, 446), (316, 360), (340, 340), (340, 420)], 2)
+polygon(screen, (164, 158, 0), [(316, 360), (249, 346), (289, 290)])
+polygon(screen, (0, 0, 0), [(316, 360), (249, 346), (289, 290)], 2) 
+polygon(screen, (172, 158, 0), [(316, 360), (289, 290), (322, 275), (340, 340)])
+polygon(screen, (0, 0, 0), [(316, 360), (289, 290), (322, 275), (340, 340)], 2)
+circle(screen, (0, 0, 0), (282, 390), 22)
+ellipse(screen, (64, 48, 31), (27, 490, 37, 12))
+ellipse(screen, (64, 48, 31), (87, 510, 37, 12))
+ellipse(screen, (64, 48, 31), (32, 420, 33, 72))
+ellipse(screen, (64, 48, 31), (92, 440, 33, 72))
+ellipse(screen, (64, 48, 31), (47, 405, 94, 55))
+ellipse(screen, (64, 48, 31), (124, 395, 60, 40))
+ellipse(screen, (64, 48, 31), (159, 410, 40, 45))
+ellipse(screen, (64, 48, 31), (119, 394, 40, 45))
+ellipse(screen, (64, 48, 31), (194, 435, 13, 45))
+ellipse(screen, (64, 48, 31), (147, 416, 13, 45))
+ellipse(screen, (64, 48, 31), (174, 473, 27, 10))
+ellipse(screen, (64, 48, 31), (127, 454, 27, 10))
+rect(screen, (64, 48, 31), (41, 390, 55, 55))
+rect(screen, (0, 0, 0), (41, 390, 55, 55), 2)
+ellipse(screen, (64, 48, 31), (32, 390, 21, 24))
+ellipse(screen, (0, 0, 0), (32, 390, 21, 24), 2)
+ellipse(screen, (64, 48, 31), (87, 390, 21, 24))
+ellipse(screen, (0, 0, 0), (87, 390, 21, 24),2)
+ellipse(screen, (0, 0, 0), (51, 413, 12, 6), 2)
+ellipse(screen, (255, 255, 255), (52, 413, 10, 4))
+ellipse(screen, (0, 0, 0), (72, 413, 12, 6), 2)
+ellipse(screen, (255, 255, 255), (73, 413, 10, 4))
+circle(screen, (0, 0, 0), (57, 415), 3)
+circle(screen, (0, 0, 0), (78, 415), 3)
+arc(screen, (0, 0, 0), (52, 433, 30, 13), 0, 3.14, 2)
+polygon(screen, (255, 255, 255), [(54, 435), (60, 433), (58, 425)])
+polygon(screen, (0, 0, 0), [(54, 435), (60, 433), (58, 425)], 2)
+polygon(screen, (255, 255, 255), [(81, 435), (75, 433), (77, 425)])
+polygon(screen, (0, 0, 0), [(81, 435), (75, 433), (77, 425)], 2)
+ellipse(screen, (0, 0, 0), (239, 400, 30, 12), 2)
+ellipse(screen, (100, 100, 100), (235, 405, 10, 16))
+ellipse(screen, (0, 0, 0), (235, 405, 10, 16), 1)
+ellipse(screen, (0, 0, 0), (209, 412, 30, 12), 2)
+ellipse(screen, (0, 0, 0), (205, 417, 10, 10), 1)
+ellipse(screen, (0, 0, 0), (198, 420, 10, 10), 1)
+pygame.display.update()
+clock = pygame.time.Clock()
+finished = False
+
+while not finished:
+    clock.tick(FPS)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            finished = True
+pygame.quit()
+
